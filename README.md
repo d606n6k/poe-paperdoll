@@ -1,3 +1,16 @@
+# The PoE Paperdoll
+
+This is a pet web development project that will consume the Path of Exile API. This app allows users to import their characters from their [Path of Exile Account](https://www.pathofexile.com/my-account). The users will be able to drag and drop gear from a list of unique items that exist within the game for MVP.
+
+MVP Goals:
+
+1. Simple text input asking for account name.
+   1.a Once request is sent and account comes back, we will want to be able to select which character we want to display on the paperdoll
+2. Character sheet displaying all equipment slots available in game.
+   2.a Possible drag and drop functionality?
+
+This app is still in early development.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
