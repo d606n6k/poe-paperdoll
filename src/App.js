@@ -4,11 +4,18 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Nav from "./components/Nav/Nav.js";
 import Home from "./pages/Home/Home";
+import background from "./img/expedition-bg.jpg";
 
 function App() {
   return (
     <Router>
-      <div>
+      <div
+        style={{
+          backgroundImage: `url(${background})`,
+          backgroundSize: "cover",
+          height: "1020px",
+        }}
+      >
         <Nav />
         <hr />
         {/*
