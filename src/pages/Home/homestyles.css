@@ -1,3 +1,15 @@
+.home-control-style h2 {
+  color: white;
+  font-size: 24px;
+}
+
 .home-control-style p {
   color: white;
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+.find-account-input {
+  text-align: center;
+  font-size: 24px;
 }

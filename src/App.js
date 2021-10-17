@@ -6,6 +6,7 @@ import Nav from "./components/Nav/Nav.js";
 import Home from "./pages/Home/Home";
 import AccountSearch from "./pages/AccountSearch/AccountSearch.js";
 import About from "./pages/About/About.js";
+import Footer from "./components/Footer/Footer";
 import background from "./img/expedition-bg.jpg";
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           </Route>
           {/* <Route path="/dashboard"><Dashboard /></Route> */}
         </Switch>
+        {/* <Footer /> */}
       </div>
     </Router>
   );
