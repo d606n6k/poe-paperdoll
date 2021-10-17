@@ -13,15 +13,23 @@ function Nav() {
           </Link>
         </li>
         <li className="m-6">
+          <Link
+            to="/accountlookup"
+            className="text-gray-200 hover:text-yellow-500"
+          >
+            Lookup Your Account
+          </Link>
+        </li>
+        <li className="m-6">
           <Link to="/about" className="text-gray-200 hover:text-yellow-500">
             About
           </Link>
         </li>
-        <li className="m-6">
+        {/* <li className="m-6">
           <Link to="/dashboard" className="text-gray-200 hover:text-yellow-500">
             Dashboard
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

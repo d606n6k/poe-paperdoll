@@ -1,12 +1,11 @@
 import React from "react";
-
-// import "./index.css";
+import "./homestyles.css";
 import PaperDoll from "../../components/Paperdoll/PaperDoll";
 
 function Home() {
   return (
-    <div>
-      <PaperDoll />
+    <div className="home-control-style flex items-center justify-center mt-3">
+      <p>Home should have basic intro text describing what this app is.</p>
     </div>
   );
 }

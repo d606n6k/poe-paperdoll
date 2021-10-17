@@ -4,6 +4,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Nav from "./components/Nav/Nav.js";
 import Home from "./pages/Home/Home";
+import AccountSearch from "./pages/AccountSearch/AccountSearch.js";
 import background from "./img/expedition-bg.jpg";
 
 function App() {
@@ -12,9 +13,11 @@ function App() {
       <div
         style={{
           backgroundImage: `url(${background})`,
-          backgroundSize: "cover",
-          height: "1020px",
+          backgroundSize: "contain",
+          // height: "1020px",
+          backgroundRepeat: "no-repeat",
         }}
+        className="min-h-screen"
       >
         <Nav />
         <hr />
@@ -29,8 +32,11 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
+          <Route exact path="/accountlookup">
+            <AccountSearch />
+          </Route>
           <Route path="/about">{/* <About /> */}</Route>
-          <Route path="/dashboard">{/* <Dashboard /> */}</Route>
+          {/* <Route path="/dashboard"><Dashboard /></Route> */}
         </Switch>
       </div>
     </Router>
