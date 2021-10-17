@@ -15,9 +15,10 @@ function App() {
       <div
         style={{
           backgroundImage: `url(${background})`,
-          backgroundSize: "contain",
+          backgroundSize: "cover",
           // height: "1020px",
           backgroundRepeat: "no-repeat",
+          backgroundPosition: "center 50px",
         }}
         className="min-h-screen"
       >
