@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -6,7 +6,7 @@ import Nav from "./components/Nav/Nav.js";
 import Home from "./pages/Home/Home";
 import AccountSearch from "./pages/AccountSearch/AccountSearch.js";
 import About from "./pages/About/About.js";
-import Footer from "./components/Footer/Footer";
+// import Footer from "./components/Footer/Footer";
 import background from "./img/expedition-bg.jpg";
 
 function App() {

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./navstyle.css";
 
 function Nav() {
-  console.log("The PaperDoll component has loaded successfully!");
+  // console.log("The PaperDoll component has loaded successfully!");
   return (
     <div className="nav-style-control">
       <ul className="flex">

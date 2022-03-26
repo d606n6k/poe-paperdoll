@@ -37,7 +37,7 @@ function Home() {
             ></input>
           </div>
           <div className="flex items-center justify-center">
-            <button className="w-1/3 mt-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+            <button className="find-account-button w-1/3 mt-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
               Find Your Account
             </button>
           </div>
