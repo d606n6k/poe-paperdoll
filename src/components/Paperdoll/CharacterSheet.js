@@ -1,11 +1,14 @@
 import React from "react";
+import "./paperdoll.css";
 
 function CharacterSheet({}) {
   return (
+    
     <div className="container">
-      <div class="row">
+      <div class="row pt-4">
         {/* <div class="col-2">1 of 3</div> */}
-        <div class="col-8">
+        <div class="col-lg-8 col-md-12 text-white text-sm">
+        <h2 className="text-center">Character Sheet</h2>
           {/* Start Paperdoll Header */}
           <div class="inventoryPanelControls">
             <div class="headerLabel">Inventory</div>
@@ -524,8 +527,11 @@ function CharacterSheet({}) {
             </div>
           </div>
         </div>
-        <div class="col-4 text-white text-sm">
-          <h2 className="text-align-center">Stats Side Panel will go here</h2>
+        <div class="col-lg-4 col-md-12 text-white text-sm mb-4">
+          <h2 className="text-center">Stats Panel</h2>
+          <div className="stats-side-panel">
+            {/* STATS WILL BE POPULATED HERE */}
+          </div>
         </div>
       </div>
     </div>

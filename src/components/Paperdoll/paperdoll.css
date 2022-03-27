@@ -164,3 +164,11 @@
     background-repeat: no-repeat;
     vertical-align: top;
 }
+
+/* Stats Side Panel */
+.stats-side-panel{
+    width: 100%;
+    height: 100%;
+    border: solid 2px #44240d;
+    background-color: #0e0e0ecc;
+}

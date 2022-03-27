@@ -18,6 +18,7 @@ function PaperDoll() {
           You may drag and drop items from the right panel onto your character
           to swap out items
         </p>
+        <hr />
       </div>
       <CharacterSheet />
     </>
