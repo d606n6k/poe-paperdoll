@@ -6,6 +6,7 @@ import Nav from "./components/Nav/Nav.js";
 import Home from "./pages/Home/Home";
 import AccountSearch from "./pages/AccountSearch/AccountSearch.js";
 import About from "./pages/About/About.js";
+import PaperDoll from "./components/Paperdoll/PaperDoll";
 // import Footer from "./components/Footer/Footer";
 import background from "./img/expedition-bg.jpg";
 
@@ -38,8 +39,12 @@ function App() {
           <Route exact path="/accountlookup">
             <AccountSearch />
           </Route>
-          <Route path="/about">
+          <Route exact path="/about">
             <About />
+          </Route>
+          {/* temporary paperdoll link for development */}
+          <Route exact path="/paperdoll">
+            <PaperDoll />
           </Route>
           {/* <Route path="/dashboard"><Dashboard /></Route> */}
         </Switch>

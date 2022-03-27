@@ -1,0 +1,166 @@
+.activePanel {
+    float: left;
+    position: relative;
+    width: 600px;
+}
+
+.mainInventoryPanel {
+    width: 600px;
+    height: 781px;
+    background: url(../../img/MainInventory.png);
+    z-index: 100;
+}
+
+/* Header Label */
+.headerLabel {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    width: 180px;
+    margin: 0 auto;
+    line-height: 26px;
+    font-family: "Cinzel";
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    font-size: 1.5em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Fontin, serif;
+}
+
+/* Paperdoll Header Controls*/
+.inventoryPanelControls {
+    position: relative;
+    float: left;
+    width: 600px;
+    z-index: 1;
+}
+
+/* Weapon Swap Slot 1 - First Weapons*/
+.mainInventoryPanel .weaponSwap1.left, .mainInventoryPanel .weaponSwap2.left {
+    left: 92px;
+}
+
+.mainInventoryPanel .weaponSwap1 {
+    width: 44px;
+    height: 24px;
+    background: url(../../img/WeaponSwap1.png);
+}
+
+.mainInventoryPanel .weaponSwap1, .mainInventoryPanel .weaponSwap2 {
+    display: none;
+    position: absolute;
+    top: 87px;
+}
+
+/* Weapon Swap Slot 1 - Second Weapons */
+.mainInventoryPanel .weaponSwap1.left, .mainInventoryPanel .weaponSwap2.left {
+    left: 92px;
+}
+
+.mainInventoryPanel .weaponSwap2 {
+    width: 44px;
+    height: 24px;
+    background: url(../../img/WeaponSwap2.png);
+}
+
+.mainInventoryPanel .weaponSwap1, .mainInventoryPanel .weaponSwap2 {
+    display: none;
+    position: absolute;
+    top: 87px;
+}
+
+/* Weapon Swap Slot 2 - First Weapons */
+.mainInventoryPanel .weaponSwap1.right, .mainInventoryPanel .weaponSwap2.right {
+    right: 92px;
+}
+
+.mainInventoryPanel .weaponSwap2 {
+    width: 44px;
+    height: 24px;
+    background: url(../../img/WeaponSwap2.png);
+}
+
+/* Weapon Seap Mini Left Slot */
+
+.mainInventoryPanel .weaponSwapMini.left {
+    left: 168px;
+}
+
+.mainInventoryPanel .weaponSwapMini {
+    width: 47px;
+    height: 81px;
+    background: url(../../img/WeaponSwapMini.png);
+    position: absolute;
+    top: 106px;
+    display: none;
+}
+/* Mini Icon Container Left AND Right*/
+.mainInventoryPanel .weaponSwapMini img {
+    position: absolute;
+}
+
+.mainInventoryPanel .weaponSwapMini .miniIconContainer {
+    height: 68px;
+    width: 35px;
+    margin: 6px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+/* Weapon Seap Mini Right Slot */
+.mainInventoryPanel .weaponSwapMini.right {
+    right: 168px;
+}
+
+/* Weapons Slot 1 and 2 */
+/* Left Slot */
+.itemPlaced.ipW2 {
+    width: 94.929px;
+}
+
+.itemPlaced.ipW2 {
+    width: 94.929px;
+}
+
+.itemPlaced.ipW2 {
+    width: 94.929px;
+}
+/* Right Slot */
+.itemPlaced.iH3.ipH4 .iconContainer {
+    top: 23.73225px;
+}
+
+.itemPlaced.ipH4 {
+    height: 189.858px;
+}
+
+.newItemContainer.iW1 .icon {
+    width: 47.4645px;
+}
+.newItemContainer .iconContainer {
+    position: relative;
+    text-align: center;
+}
+
+.newItemContainer .iconContainer {
+    position: relative;
+    text-align: center;
+}
+
+.newItemContainer .icon img {
+    display: block;
+}
+
+.newItemContainer .icon {
+    display: inline-block;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}

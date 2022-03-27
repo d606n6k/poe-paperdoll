@@ -7,12 +7,12 @@ function Nav() {
   return (
     <div className="nav-style-control">
       <ul className="flex">
-        <li className="m-6">
+        <li className="m-3">
           <Link to="/" className="text-gray-200 hover:text-yellow-500">
             Home
           </Link>
         </li>
-        <li className="m-6">
+        <li className="m-3">
           <Link
             to="/accountlookup"
             className="text-gray-200 hover:text-yellow-500"
@@ -20,7 +20,15 @@ function Nav() {
             Lookup Your Account
           </Link>
         </li>
-        <li className="m-6">
+        <li className="m-3">
+          <Link
+            to="/paperdoll"
+            className="text-gray-200 hover:text-yellow-500"
+          >
+            Paperdoll
+          </Link>
+        </li>
+        <li className="m-3">
           <Link to="/about" className="text-gray-200 hover:text-yellow-500">
             About
           </Link>
