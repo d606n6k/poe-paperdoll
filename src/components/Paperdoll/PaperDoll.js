@@ -1,6 +1,8 @@
 import React from "react";
-// import background from "../../img/expedition-bg.jpg";
 import "./paperdoll.css";
+// import AccountCharacter from "AccountCharacter.js"
+
+// TODO: Create class for axios call toe PoE API 
 
 function PaperDoll() {
   console.log("The PaperDoll component has loaded successfully!");
