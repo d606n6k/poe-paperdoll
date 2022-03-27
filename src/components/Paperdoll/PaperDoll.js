@@ -2,7 +2,7 @@ import React from "react";
 import "./paperdoll.css";
 // import AccountCharacter from "AccountCharacter.js"
 
-// TODO: Create class for axios call toe PoE API 
+// TODO: Create class for axios call toe PoE API
 
 function PaperDoll() {
   console.log("The PaperDoll component has loaded successfully!");
@@ -13,7 +13,10 @@ function PaperDoll() {
         <h2 className="text-white text-lg">Welcome to your character Sheet</h2>
       </div>
       <div className="flex items-center justify-center mt-3">
-        <p className="text-white text-sm">You may drag and drop items from the right panel onto your character to swap out items</p>
+        <p className="text-white text-sm">
+          You may drag and drop items from the right panel onto your character
+          to swap out items
+        </p>
       </div>
 
       <div className="container">
@@ -23,9 +26,9 @@ function PaperDoll() {
             {/* Start Paperdoll Header */}
             <div class="inventoryPanelControls">
               <div class="headerLabel">Inventory</div>
-              <div class="refreshButton">
+              {/* <div class="refreshButton">
                 <div class="refreshButtonIcon"></div>
-              </div>
+              </div> */}
               <div class="inventoryPanelButton inventory left selected"></div>
               <div class="inventoryPanelButton cosmetic right"></div>
             </div>
@@ -517,7 +520,9 @@ function PaperDoll() {
               </div>
             </div>
           </div>
-          <div class="col-4 text-white text-sm">Stats Side Panel will go here</div>
+          <div class="col-4 text-white text-sm">
+            <h2 className="text-align-center">Stats Side Panel will go here</h2>
+          </div>
         </div>
       </div>
     </>
