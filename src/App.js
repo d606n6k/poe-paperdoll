@@ -8,7 +8,7 @@ import AccountSearch from "./pages/AccountSearch/AccountSearch.js";
 import About from "./pages/About/About.js";
 import PaperDoll from "./components/Paperdoll/PaperDoll";
 // import Footer from "./components/Footer/Footer";
-import background from "./img/expedition-bg.jpg";
+import background from "./img/sota-bg.jpg";
 
 function App() {
   return (

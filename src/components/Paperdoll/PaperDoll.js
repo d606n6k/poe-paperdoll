@@ -16,8 +16,8 @@ function PaperDoll() {
 
       <div className="container">
         <div class="row">
-          <div class="col">1 of 3</div>
-          <div class="col">
+          {/* <div class="col-2">1 of 3</div> */}
+          <div class="col-8">
             {/* Start Paperdoll Header */}
             <div class="inventoryPanelControls">
               <div class="headerLabel">Inventory</div>
@@ -515,7 +515,7 @@ function PaperDoll() {
               </div>
             </div>
           </div>
-          <div class="col">3 of 3</div>
+          <div class="col-4 text-white text-sm">Stats Side Panel will go here</div>
         </div>
       </div>
     </>
