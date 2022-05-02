@@ -1,22 +1,22 @@
 import React from "react";
 import "./paperdoll.css";
 
-function CharacterSheet({}) {
+function CharacterSheet() {
   return (
     
     <div className="container">
-      <div class="row pt-4">
-        {/* <div class="col-2">1 of 3</div> */}
-        <div class="col-lg-8 col-md-12 text-white text-sm">
+      <div className="row pt-4">
+        {/* <div className="col-2">1 of 3</div> */}
+        <div className="col-lg-8 col-md-12 text-white text-sm">
         <h2 className="text-center">Character Sheet</h2>
           {/* Start Paperdoll Header */}
-          <div class="inventoryPanelControls">
-            <div class="headerLabel">Inventory</div>
-            {/* <div class="refreshButton">
-           <div class="refreshButtonIcon"></div>
+          <div className="inventoryPanelControls">
+            <div className="headerLabel">Inventory</div>
+            {/* <div className="refreshButton">
+           <div className="refreshButtonIcon"></div>
           </div> */}
-            <div class="inventoryPanelButton inventory left selected"></div>
-            <div class="inventoryPanelButton cosmetic right"></div>
+            <div className="inventoryPanelButton inventory left selected"></div>
+            <div className="inventoryPanelButton cosmetic right"></div>
           </div>
           {/* start paperdoll structure */}
           <div className="activePanel">
@@ -527,7 +527,7 @@ function CharacterSheet({}) {
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 text-white text-sm mb-4">
+        <div className="col-lg-4 col-md-12 text-white text-sm mb-4">
           <h2 className="text-center">Stats Panel</h2>
           <div className="stats-side-panel">
             {/* STATS WILL BE POPULATED HERE */}

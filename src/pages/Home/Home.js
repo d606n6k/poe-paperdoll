@@ -14,7 +14,7 @@ function Home() {
             <br />
           </div>
           <div>
-            <p className="flex items-center justify-center">
+            <p className="poe-text">
               Welcome to the beta version of PoE Paperdoll. The online character window for the video game <a href="https://www.pathofexile.com" target="_blank" className="text-red-400 hover:text-red-600" rel="noreferrer">Path of Exile</a>.
             </p>
             <br />

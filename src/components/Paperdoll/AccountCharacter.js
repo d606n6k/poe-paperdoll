@@ -1,26 +1,56 @@
-import React, {Class} from "React";
-import axios from "axios";
-// Todo: Need to debug why this breaks app when imported into another compoent. Also need to implement API call once PoE team gets back to me with active API keys
+import React from "react";
+// import axios from "axios";
+
 export class AccountCharacter extends React.Component {
-  state = {
-    character: [],
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      character: [],
+      league: []
+    };
+  }
 
   componentDidMount() {
-    axios.get(`https://jsonplaceholder.typicode.com/users`).then((res) => {
-      const characterSheet = res.data;
-      console.log(characterSheet);
-      this.setState({ characterSheet });
-    });
+    // axios way of fetching data
+    // axios.get(`https://api.pathofexile.com/league`).then((res) => {
+    //   // const characterSheet = res.data;
+    //   const currentLeague = res.data;
+    //   console.log(currentLeague);
+    //   this.setState({ league: res.data });
+    // });
+
+    // windows.fetch way of getting api data
+    // this call works BUT I do not have authorization to access it.
+    // https://reactjs.org/docs/faq-ajax.html
+    // fetch w auth doc: https://learn.co/lessons/javascript-fetch
+    fetch("https://api.pathofexile.com/league", {
+      headers: {
+        Authorization: `${process.env.REACT_APP_POE_SECRET}`
+      }
+    })
+      .then(
+        (res) => {
+          this.setState({
+            league: res.data
+          })
+        },
+        (error) => {
+          this.setState({
+            error
+          })
+        }
+      )
+
   }
 
   render() {
     return (
-      <ul>
-        {this.state.persons.map((person) => (
-          <li key={person.id}>{person.name}</li>
-        ))}
-      </ul>
+      <></>
+      // <ul>
+      //   {this.state.persons.map((person) => (
+      //     <li key={person.id}>{person.name}</li>
+      //   ))}
+      // </ul>
     );
   }
 }
