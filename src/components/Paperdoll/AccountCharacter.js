@@ -1,6 +1,9 @@
 import React from "react";
 // import axios from "axios";
 
+// TODO:
+// need to figure out authentication for poe api
+
 export class AccountCharacter extends React.Component {
   constructor(props) {
     super(props);
@@ -23,9 +26,13 @@ export class AccountCharacter extends React.Component {
     // this call works BUT I do not have authorization to access it.
     // https://reactjs.org/docs/faq-ajax.html
     // fetch w auth doc: https://learn.co/lessons/javascript-fetch
-    fetch("https://api.pathofexile.com/league", {
+    fetch("https://pathofexile.com/oauth/authorize", {
+      method: 'GET',
+      withCredentials: true,
+      credentials: 'include',
       headers: {
-        Authorization: `${process.env.REACT_APP_POE_SECRET}`
+        'Authorization': `${process.env.REACT_APP_POE_SECRET}`,
+        'Content-Type': 'application/json'
       }
     })
       .then(
