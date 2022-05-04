@@ -4,7 +4,7 @@ import "./paperdoll.css";
 function CharacterSheet() {
   return (
     
-    <div className="container">
+    <div className="container" style={{minHeight: '2000px'}}>
       <div className="row pt-4">
         {/* <div className="col-2">1 of 3</div> */}
         <div className="col-lg-8 col-md-12 text-white text-sm">
