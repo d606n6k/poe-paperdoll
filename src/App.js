@@ -11,6 +11,8 @@ import PaperDoll from "./components/Paperdoll/PaperDoll";
 // import Footer from "./components/Footer/Footer";
 import background from "./img/sota-bg.jpg";
 
+// console.log(process.env.REACT_APP_POE_CLIENT_ID)
+
 function App() {
   return (
     <Router>

@@ -2,6 +2,7 @@ import React from "react";
 import "./paperdoll.css";
 // import AccountCharacter from "AccountCharacter.js"
 import CharacterSheet from "./CharacterSheet.js"
+import AccountCharacter from "./AccountCharacter.js";
 
 // TODO: Create class for axios call toe PoE API
 
@@ -20,6 +21,7 @@ function PaperDoll() {
         </p>
         <hr />
       </div>
+      <AccountCharacter />
       <CharacterSheet />
     </>
   );
