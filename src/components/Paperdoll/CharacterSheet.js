@@ -1,7 +1,7 @@
 import React from "react";
 import "./paperdoll.css";
 
-function CharacterSheet({}) {
+function CharacterSheet() {
   return (
     
     <div className="container">
