@@ -2,21 +2,20 @@ import React from "react";
 import "./accountsearch.css";
 
 // define a variable for account name
-let accountName;
-// need a handle for .find-account-button
-let findAccountBtn = document.querySelector(".find-account-button");
-// Create function to query the api for an account
-function getAccount(){
-  let poeApiUrl = `https://api.pathofexile.com`
-  fetch(poeApiUrl).then(function(res){
-    return res.json();
-  }).then(function(data){
-    console.log(data)
-    
-  })
-}
+// let accountName;
+// // need a handle for .find-account-button
+// let findAccountBtn = document.querySelector(".find-account-button");
+// // Create function to query the api for an account
+// function getAccount(){
+//   let poeApiUrl = `https://api.pathofexile.com`
+//   fetch(poeApiUrl).then(function(res){
+//     return res.json();
+//   }).then(function(data){
+//     console.log(data)
+//   })
+// }
 
-findAccountBtn.on("click", getAccount());
+// findAccountBtn.on("click", getAccount());
 
 function AccountSearch() {
   return (
