@@ -1,4 +1,5 @@
 import React from "react";
+import { useRef, useEffect, useState } from "react";
 import "./accountsearch.css";
 
 // define a variable for account name
@@ -6,18 +7,35 @@ import "./accountsearch.css";
 // // need a handle for .find-account-button
 // let findAccountBtn = document.querySelector(".find-account-button");
 // // Create function to query the api for an account
-// function getAccount(){
-//   let poeApiUrl = `https://api.pathofexile.com`
-//   fetch(poeApiUrl).then(function(res){
-//     return res.json();
-//   }).then(function(data){
-//     console.log(data)
-//   })
+// function getAccount() {
+//   let poeApiUrl = `https://api.pathofexile.com`;
+//   fetch(poeApiUrl)
+//     .then(function (res) {
+//       return res.json();
+//     })
+//     .then(function (data) {
+//       console.log(data);
+//     });
 // }
 
-// findAccountBtn.on("click", getAccount());
+const AccountSearch = () => {
+  const [accountFetch, setAccount] = useState([]);
+  const ref = useRef(null)
+  useEffect(() => {
+    // findAccountBtn.on("click", getAccount());
+    const handleClick = event =>{
+      console.log('Button clicked')
+    }
 
-function AccountSearch() {
+    const element = ref.current;
+
+    element.addEventListener('click', handleClick);
+
+    return () => {
+      element.removeEventListener("click", handleClick);
+    }
+  },[]);
+
   return (
     <>
       <div className="flex items-center justify-center mt-3">
@@ -49,7 +67,7 @@ function AccountSearch() {
             ></input>
           </div>
           <div className="flex items-center justify-center">
-            <button className="find-account-button w-1/3 mt-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+            <button className="find-account-button w-1/3 mt-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" ref={ref}>
               Find Your Account
             </button>
           </div>
@@ -70,6 +88,6 @@ function AccountSearch() {
       </div>
     </>
   );
-}
+};
 
 export default AccountSearch;

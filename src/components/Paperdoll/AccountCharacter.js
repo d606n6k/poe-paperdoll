@@ -31,15 +31,15 @@ export class AccountCharacter extends React.Component {
       withCredentials: true,
       credentials: 'include',
       headers: {
-        Authorization: `${process.env.REACT_APP_POE_SECRET}`,
+        Authorization: process.env.REACT_APP_POE_SECRET,
         ContentType: 'application/json'
       }
     })
       .then((res) => {
         console.log(res)
-          this.setState({
-            league: res.data
-          })
+          // this.setState({
+          //   league: res.data
+          // })
       },
         (error) => {
           this.setState({
