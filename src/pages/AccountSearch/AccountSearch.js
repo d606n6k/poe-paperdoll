@@ -70,6 +70,7 @@ const AccountSearch = () => {
             </div>
           </form>
         </div>
+        {/* TODO: This is where I will build/plug-in character paperdoll */}
         {/* <div className="flex items-center justify-center mt-3">
     <div className="grid grid-cols-3 gap-4">
       <div>1</div>

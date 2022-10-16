@@ -16,6 +16,7 @@ import background from "./img/sota-bg.jpg";
 function App() {
   return (
     <Router>
+      {/* TODO: need to move this to stylesheet and fix setting the league bg */}
       <div
         style={{
           backgroundImage: `url(${background})`,
