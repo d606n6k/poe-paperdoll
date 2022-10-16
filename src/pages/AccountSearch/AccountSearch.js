@@ -2,37 +2,33 @@ import React from "react";
 import { useRef } from "react";
 import "./accountsearch.css";
 
-// define a variable for account name
-// let accountName;
-// // need a handle for .find-account-button
-// let findAccountBtn = document.querySelector(".find-account-button");
-// // Create function to query the api for an account
-// function getAccount() {
-//   let poeApiUrl = `https://api.pathofexile.com`;
-//   fetch(poeApiUrl)
-//     .then(function (res) {
-//       return res.json();
-//     })
-//     .then(function (data) {
-//       console.log(data);
-//     });
-// }
-
 const AccountSearch = () => {
   const accountRef = useRef();
-  // TODO: capture account name and plug it into string for the fetch url
-  let poeFetchUrl = "https://www.pathofexile.com/character-window/get-characters?accountName=Emericas21";
+  // TODO: capture account name and plug it into string for the fetch url - 
+  // 1. need to successfully get past CORS errors before working on refactoring this url to a template literal and passing in the value on the input
+  let poeFetchUrl =
+    "https://www.pathofexile.com/character-window/get-characters?accountName=Emericas21";
   const getAccount = (event) => {
     event.preventDefault();
     console.log({
       account: accountRef.current.value,
     });
-    // this is where I will want to fetch the data
-    fetch(poeFetchUrl).then((response) => {
-      return response.json();
-    }).then((data)=>{
-      console.log(data)
-    });
+    // this is where I will want to fetch the data from PoE API
+    fetch(poeFetchUrl, {
+      method: "GET", // *GET, POST, PUT, DELETE, etc.
+      mode: "no-cors", // no-cors, *cors, same-origin
+      headers: {
+        "Content-Type": "application/json",
+      },
+      referrerPolicy: 'no-referrer'
+    })
+      .then((response) => {
+        console.log(response)
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+      });
   };
 
   return (
